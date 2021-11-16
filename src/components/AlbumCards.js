@@ -6,8 +6,9 @@ function AlbumCards ({name, image, genre, youtube, liked, bio}) {
         <div className= 'albumCard'>
             <h3>{name}</h3>
             <img src={image} alt={name}/>
-            <button>Like</button>
+            <p><button>Show More</button></p>
         </div>
+        
     );
 }
 

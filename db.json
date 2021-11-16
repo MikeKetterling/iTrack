@@ -9,6 +9,87 @@
     "image": "https://yt3.ggpht.com/ytc/AKedOLTVKQFg7tOwvHrefwTbLU6Xr6qcfGzHJ75ubANVMg=s88-c-k-c0x00ffffff-no-rj",
     "liked": false,
     "youtube": "https:www.youtube.com/c/jcole/playlists"
+  },
+  {
+    "id": 2,
+    "name": "Don Toliver",
+    "genre": " R&B and Trap",
+    "bio": "Caleb Zackery “Don” Toliver, is a rapper, singer, and songwriter from Houston, Texas. ... The singles quickly caught the ear of Atlantic Records, which signed Toliver to the label in March 2018. Under Atlantic, he released his major-label debut album, Donny Womack.",
+    "image": "https://yt3.ggpht.com/p2YkrrrVxCKqWHXdjOWtFN4Ov5hxBo4Ode1PWnG_6vRplD_0P402kZyMk1_Hk5jFBtEtdQ6dJaM=s88-c-k-c0x00ffffff-no-rj",
+    "liked": false,
+    "youtube": "https://www.youtube.com/channel/UCgT01FILdWB9BsXBXKjpQ7A/playlists"
+  },
+  {
+    "id": 3,
+    "name": "NOTD",
+    "genre": "Dance/Electronic",
+    "bio": "NOTD (pronounced noted) is a Swedish musical production duo composed of Tobias Danielsson and Samuel Brandt. They are best known for their songs 'I Wanna Know' featuring Bea Miller and 'So Close'. The duo met on SoundCloud and began creating remixes together before they found out they would be attending the same high school. The duo chose the name NOTD by combining the last two letters of each of their last names and reversing them.",
+    "image": "https://yt3.ggpht.com/ytc/AKedOLQ-IkLhNG6US0P6__QX9KgUPCdAQQxWfW1-vom9aw=s88-c-k-c0x00ffffff-no-rj",
+    "liked": false,
+    "youtube": "https://www.youtube.com/c/NOTD/playlists"
+  },
+  {
+    "id": 4,
+    "name": "Blink-182",
+    "genre": "Pop Punk/Punk Rock",
+    "bio": "Blink-182 gained mainstream success in the early 2000s. Arriving in the wake of the pop-punk explosion, and they broke through with their third album, 1999's Enema of the State, releasing a steady stream of hits, bolstered by humorous, tongue-in-cheek music videos that were popular in the waning days of MTV's musical programming.",
+    "image": "https://yt3.ggpht.com/ytc/AKedOLS9wSSSch2T5RCOqeWes0CQPq6CuE7n6BH6SGqp9g=s88-c-k-c0x00ffffff-no-rj",
+    "liked": false,
+    "youtube": "https://www.youtube.com/user/blink182/playlists"
+  },
+  {
+    "id": 5,
+    "name": "DJ Snake",
+    "genre": "EDM/Trap",
+    "bio": "William Sami Étienne Grigahcine, also known by his stage name DJ Snake, is a French record producer and DJ. He first achieved international attention in 2013 by releasing an instrumentation-orientated single 'Turn Down for What'. He made his international debut with the singles 'Bird Machine' and 'Turn Down for What' in 2013. ",
+    "image": "https://yt3.ggpht.com/QjM8zFd-mvfZiftvPZwaI5OYaT91w1GEIyWzvPv0nf55xKBCz4gSHLh8zCtK2aLQc-MTNkNM=s88-c-k-c0x00ffffff-no-rj",
+    "liked": false,
+    "youtube": "https://www.youtube.com/c/DJSnake/playlists"
+  },
+  {
+    "id": 6,
+    "name": "Kendrick Lamar",
+    "genre": "Rap",
+    "bio": "Kendrick Lamar Duckworth is an American rapper, songwriter and record producer. Since his mainstream debut in 2012 with Good Kid, M.A.A.D City, Lamar has been regarded as one of the most influential rappers of his generation.",
+    "image": "https://yt3.ggpht.com/ytc/AKedOLTk71Ju9YYj5VQWpMPgRcgHnfeeGQ3Guf1M2F8m=s88-c-k-c0x00ffffff-no-rj",
+    "liked": false,
+    "youtube": "https://www.youtube.com/channel/UC3lBXcrKFnFAFkfVk5WuKcQ/playlists"
+  },
+  {
+    "id": 7,
+    "name": "Khalid",
+    "genre": "",
+    "bio": "Khalid Donnel Robinson is an American singer signed to Right Hand Music Group and RCA Records. He rose to fame after the release of his debut studio album, American Teen, and the album spawned the US top-20 singles 'Location' and 'Young Dumb & Broke', and was later certified double platinum.",
+    "image": "https://yt3.ggpht.com/H0d6VEs50RnnHxCFbwLU_Z2ItKjt_LDzcHxuqup3CBZrwqyMbHBUsZqXJUPsNeK7w81lJr1yYQ=s88-c-k-c0x00ffffff-no-rj",
+    "liked": false,
+    "youtube": "https://www.youtube.com/channel/UCkntT5Je5DDopF70YUsnuEQ/playlists"
+  },
+  {
+    "id": 8,
+    "name": "Tame Impala",
+    "genre": "Alternative/Indie",
+    "bio": "Tame Impala is the psychedelic music project of Australian multi-instrumentalist Kevin Parker. As a touring act, Tame Impala consists of Parker, Dominic Simper, Jay Watson, Cam Avery, and Julien Barbagallo, but Parker plays with a band when touring, he writes, records, produces and engineers his albums alone.",
+    "image": "https://yt3.ggpht.com/ytc/AKedOLQ7ifSTYlkDSZ0AIfHhymKJnohhgeVt9rBlSi52lg=s88-c-k-c0x00ffffff-no-rj",
+    "liked": false,
+    "youtube": "https://www.youtube.com/c/tameimpalamusic/playlists"
+  },
+  {
+    "id": 9,
+    "name": "Michael Jackson",
+    "genre": "Funk/Soul/Dance/Disco",
+    "bio": "Michael Joseph Jackson ONM was an American singer, songwriter and dancer. Dubbed the 'King of Pop', and over a four-decade career, his contributions to music, dance and fashion, along with his publicized personal life, made him a global figure in popular culture.",
+    "image": "https://yt3.ggpht.com/ytc/AKedOLQGc--j6lvHqsv3tHEMLeMjseCnsLuCRAeLliISCXw=s88-c-k-c0x00ffffff-no-rj",
+    "liked": false,
+    "youtube": "https://www.youtube.com/c/MichaelJackson/playlists"
+  },
+  {
+    "id": 10, 
+    "name": "Ehrling",
+    "genre": "Dance/Electronic",
+    "bio": "Swedish Artist Ehrling emerged in Stockholm in 2016. He started out with sharing his talent by creating copyright-free music, and as the demand of his music grew, it was only obvious to raise the standards and aim at reaching new heights as a DJ/Composer. Having 10 years of experience creating music, Ehrling is at the best possible position to co-lead the genre of happy vibes.",
+    "image": "https://yt3.ggpht.com/ytc/AKedOLSjKKhbq1fepqvkMo_Bo6jCxUU13NQ6Ty7ox45kWQ=s88-c-k-c0x00ffffff-no-rj",
+    "liked": false,
+    "youtube": "https://www.youtube.com/channel/UCkXVou-i0Qm-L1DYVQE9BEw/playlists"
   }
 
 ]
