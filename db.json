@@ -1,0 +1,16 @@
+
+{
+"artists": [ 
+  {
+    "id": 1,
+    "name": "Jcole",
+    "genre": "Hip-hop",
+    "bio": "Jermaine Lamarr Cole known professionally as J. Cole, is an American rapper, singer, songwriter, and record producer. Born on a military base in Germany and raised in Fayetteville, North Carolina, Cole initially gained recognition as a rapper following the release of his debut mixtape, The Come Up, in early 2007.",
+    "image": "https://yt3.ggpht.com/ytc/AKedOLTVKQFg7tOwvHrefwTbLU6Xr6qcfGzHJ75ubANVMg=s88-c-k-c0x00ffffff-no-rj",
+    "liked": false,
+    "youtube": "https:www.youtube.com/c/jcole/playlists"
+  }
+
+]
+
+}
