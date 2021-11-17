@@ -8,7 +8,7 @@ import ArtistsDetails from './ArtistsDetails';
 import Header from './Header';
 
 function App() {
-
+  const [allArtist, setAllArtist] = useState([])
   const [artists, setArtists] = useState([]);
   const [search, setSearch] = useState('');
 
@@ -16,8 +16,34 @@ function App() {
   useEffect(() => {
     fetch('http://localhost:3001/artists')
     .then(resp => resp.json())
-    .then(data  => setArtists(data)) 
+    .then(data => {
+      setArtists(data)
+      setAllArtist(data)}) 
   }, []);
+
+  const handleUpdateLike = (artistObj, id) => {
+    //console.log(artistObj)
+    fetch(`http://localhost:3001/artists/${id}`, {
+      method: 'PATCH',
+      headers: {
+        'Content-Type':'application/json'
+      },
+      body: JSON.stringify({liked:!artistObj.liked})
+    })
+    .then(res => res.json())
+    .then(data => {
+      const tempArtist = allArtist.map(artist => {
+        if(artist.id === data.id){
+          return data
+        } else {
+          return artist
+        }
+      })
+      setAllArtist(tempArtist)
+
+    })
+  }
+
 
 
   const handleNewArtists = (newArtist) => {
@@ -42,7 +68,7 @@ function App() {
         </Route>
 
         <Route path="/">
-          <MainContainer props={displayCurrent} search={search} setSearch={setSearch} />
+          <MainContainer props={displayCurrent} search={search} setSearch={setSearch} handleUpdateLike={handleUpdateLike} />
           <SideContainer artists={artists} />
         </Route>
 
