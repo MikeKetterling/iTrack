@@ -6,8 +6,8 @@
       "genre": "Hip-hop",
       "bio": "Jermaine Lamarr Cole known professionally as J. Cole, is an American rapper, singer, songwriter, and record producer. Born on a military base in Germany and raised in Fayetteville, North Carolina, Cole initially gained recognition as a rapper following the release of his debut mixtape, The Come Up, in early 2007.",
       "image": "https://yt3.ggpht.com/ytc/AKedOLTVKQFg7tOwvHrefwTbLU6Xr6qcfGzHJ75ubANVMg=s88-c-k-c0x00ffffff-no-rj",
-      "liked": false,
-      "youtube": "https:www.youtube.com/c/jcole/playlists"
+      "liked": true,
+      "youtube": "https://www.youtube.com/embed/WILNIXZr2oc"
     },
     {
       "id": 2,
@@ -33,8 +33,8 @@
       "genre": "Pop Punk/Punk Rock",
       "bio": "Blink-182 gained mainstream success in the early 2000s. Arriving in the wake of the pop-punk explosion, and they broke through with their third album, 1999's Enema of the State, releasing a steady stream of hits, bolstered by humorous, tongue-in-cheek music videos that were popular in the waning days of MTV's musical programming.",
       "image": "https://yt3.ggpht.com/ytc/AKedOLS9wSSSch2T5RCOqeWes0CQPq6CuE7n6BH6SGqp9g=s88-c-k-c0x00ffffff-no-rj",
-      "liked": false,
-      "youtube": "https://www.youtube.com/user/blink182/playlists"
+      "liked": true,
+      "youtube": "https://www.youtube.com/embed/9Ht5RZpzPqw"
     },
     {
       "id": 5,

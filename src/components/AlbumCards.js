@@ -1,12 +1,21 @@
+import { useState } from 'react';
+import {Link} from 'react-router-dom'
 
 
+function AlbumCards ({id, name, image, genre, youtube, liked, bio}) {
+    const [fav, setFav] = useState(false)
 
-function AlbumCards ({name, image, genre, youtube, liked, bio}) {
+    const handleLike = () => {
+        setFav((currentLike) => !currentLike)
+    }
+ 
+
     return (
         <div className= 'albumCard'>
             <h3>{name}</h3>
             <img src={image} alt={name}/>
-            <p><button>Show More</button></p>
+            <button onClick={handleLike}>{fav?'♥':'♡'}</button>
+            <Link to={`/artists/${id}`}>Click for Details</Link>
         </div>
         
     );
