@@ -1,12 +1,12 @@
 
 
-function FavoriteList () {
+function FavoriteList ({name}) {
 
     
     
     return (
         <div>
-            <h3>Something</h3>
+            <h3>{name}</h3>
         </div>
     );
 }

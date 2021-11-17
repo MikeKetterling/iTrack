@@ -28,7 +28,7 @@ function Form ({handleNewArtists}) {
             image: formData.image,
             youtube: formData.youtube,
         };
-        fetch('http://localhost:3000/artists', {
+        fetch('http://localhost:3001/artists', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -43,9 +43,10 @@ function Form ({handleNewArtists}) {
 
 
     return (
-        <div>
+        <>
             <form onSubmit={handleSubmit} className='form'>
                 <button type='submit'>Submit</button>
+                <label>NAME</label>
                 <input 
                 type='text'
                 value={formData.name}
@@ -53,6 +54,7 @@ function Form ({handleNewArtists}) {
                 name='name'
                 onChange={handleChange}
                 />
+                <label>GENRE</label>
                 <input 
                 type='text'
                 value={formData.genre}
@@ -60,6 +62,7 @@ function Form ({handleNewArtists}) {
                 name='genre'
                 onChange={handleChange}
                 />
+                <label>BIO</label>
                 <input 
                 type='text'
                 value={formData.bio}
@@ -67,6 +70,7 @@ function Form ({handleNewArtists}) {
                 name='bio'
                 onChange={handleChange}
                 />
+                <label>IMAGE LINK</label>
                 <input 
                 type='text'
                 value={formData.image}
@@ -74,6 +78,7 @@ function Form ({handleNewArtists}) {
                 name='image'
                 onChange={handleChange}
                 />
+                <label>MUSIC VIDEO</label>
                 <input 
                 type='text'
                 value={formData.youtube}
@@ -84,7 +89,7 @@ function Form ({handleNewArtists}) {
 
                 
             </form>
-        </div>
+        </>
     );
 }
 

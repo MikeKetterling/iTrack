@@ -3,16 +3,19 @@ import FavoriteList from './FavoriteList'
 
 
 
-function SideContainer ({props}) {
-    console.log(props)
-    // const displayCurrentFavorite = favoriteArtists.map((artistObj) =>  // (<FavoriteList name={artistObj.name} liked={artistObj.liked}/>))
-     
+function SideContainer ({artists}) {
+
+    const {liked} = artists
+
+    const filteredArtists = artists.filter(artist => (liked ? !artist.liked: artist.liked))
+    const displayCurrentFavorite = filteredArtists.map((artistObj) => (<FavoriteList key={artistObj.id} name={artistObj.name} liked={artistObj.liked}/>))
+    
+
 
 
     return (
        <div>
-           <FavoriteList />
-           {/* {displayCurrentFavorite} */}
+           {displayCurrentFavorite}
        </div>
     );
 }

@@ -5,24 +5,20 @@ import SideContainer from './SideContainer';
 import Form  from './Form'
 import { Route, Switch } from 'react-router';
 import ArtistsDetails from './ArtistsDetails';
+import Header from './Header';
 
 function App() {
 
   const [artists, setArtists] = useState([]);
   const [search, setSearch] = useState('');
-   //in process
-  const [favoriteArtists, setFavoriteArtists] = useState([])
 
-  //in process
-  console.log(favoriteArtists);
 
   useEffect(() => {
-    fetch('http://localhost:3000/artists')
+    fetch('http://localhost:3001/artists')
     .then(resp => resp.json())
-    .then(data  => {setArtists(data)
-    setFavoriteArtists(data)})
-    
+    .then(data  => setArtists(data)) 
   }, []);
+
 
   const handleNewArtists = (newArtist) => {
     setArtists([ ...artists, newArtist])
@@ -34,17 +30,26 @@ function App() {
 
   return (
     <div className="App">
+      <Header />
       <Switch>
-        <Route path="/artists/:id">
-          <ArtistsDetails />
-        </Route>
-        <Route path="/artists/new">
+
+        <Route exact path="/artists/new">
           <Form  handleNewArtists={handleNewArtists}/>
         </Route>
-        <Route path="/artists">
-          <MainContainer props={displayCurrent} search={search} setSearch={setSearch} />
-          <SideContainer props={favoriteArtists} />
+
+        <Route exact path="/artists/:id">
+          <ArtistsDetails />
         </Route>
+
+        <Route path="/">
+          <MainContainer props={displayCurrent} search={search} setSearch={setSearch} />
+          <SideContainer artists={artists} />
+        </Route>
+
+        <Route>
+          <div>404 not found</div>
+        </Route>
+
       </Switch>
     </div>
   );
