@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useHistory } from "react-router-dom";
 
 
 function Form ({handleNewArtists}) {
@@ -19,6 +20,8 @@ function Form ({handleNewArtists}) {
         })
     };
 
+    const history = useHistory();
+
     const handleSubmit = (e) => {
         e.preventDefault();
         const newArtist = {
@@ -36,7 +39,9 @@ function Form ({handleNewArtists}) {
             body: JSON.stringify(newArtist) 
         })
         .then((response) => response.json())
-        .then(handleNewArtists)
+        .then(newArtist => {
+            handleNewArtists(newArtist)
+            history.push("/")})
     }
 
 

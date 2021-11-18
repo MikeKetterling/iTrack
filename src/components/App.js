@@ -65,7 +65,11 @@ function App() {
         </Route>
 
         <Route path="/">
-          <MainContainer artistArr={displayCurrent} search={search} setSearch={setSearch} handleUpdateLike={handleUpdateLike} />
+          <MainContainer 
+          artistArr={displayCurrent} 
+          search={search} 
+          setSearch={setSearch} 
+          handleUpdateLike={handleUpdateLike} />
           <SideContainer artists={artists} />
         </Route>
 
