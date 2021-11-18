@@ -1,22 +1,43 @@
 
 import {Link} from 'react-router-dom'
 
+import Card from "@mui/material/Card";
+import CardHeader from "@mui/material/CardHeader";
+import CardMedia from "@mui/material/CardMedia";
+import CardContent from "@mui/material/CardContent";
+import Grid from '@mui/material/Grid'
+import Box from '@mui/material/Box'
+
 
 function AlbumCards ({artist, handleUpdateLike}) {
-    const {id, name, image, liked} = artist
+    const {id, name, image, liked, genre} = artist
 
     
  
 
-    return (
-        <div className= 'albumCard'>
-            <h3>{name}</h3>
-            <img src={image} alt={name}/>
-            <button onClick={() => handleUpdateLike(artist)}>{liked?'♥':'♡'}</button>
-            <Link to={`/artists/${id}`}>Click for Details</Link>
-        </div>
-        
-    );
+return (
+    <Box sx={{ flexGrow: 1 }}>
+    <Grid item xs={8}>
+    <Card >
+      <CardHeader
+        title={name}
+        subheader={genre}
+      />
+      <CardMedia
+        component="img"
+        height="194"
+        image={image}
+        alt={name}
+      />
+      <CardContent>
+       {liked}
+       <button onClick={handleUpdateLike}>{liked?'♥️':'♡'}</button>
+    <Link to={`/artists/${id}`}>Click for Details</Link>
+      </CardContent>
+    </Card>
+    </Grid>
+    </Box> 
+  );
 }
 
 export default AlbumCards;
