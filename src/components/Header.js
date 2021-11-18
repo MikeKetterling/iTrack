@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import styled from 'styled-components'
 
 
 function Header () {
@@ -14,3 +15,6 @@ function Header () {
 }
 
 export default Header;
+
+const H1 = styled.h1`
+  text-align: center;
