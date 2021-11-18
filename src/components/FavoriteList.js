@@ -1,12 +1,12 @@
+import { Link } from 'react-router-dom'
 
-
-function FavoriteList ({name}) {
+function FavoriteList ({name, id}) {
 
     
     
     return (
         <div>
-            <h3>{name}</h3>
+            <Link to={`/artists/${id}`}>{name}</Link>
         </div>
     );
 }
