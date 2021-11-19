@@ -13,7 +13,7 @@ const useStyles = makeStyles({
     margin: '10px',
     display: 'flex',
     paddingLeft: 200,
-    paddingTop: 70
+    paddingTop: 70,
   },
   buttonHeart: {
     backgroundColor: '#00d6ef',
@@ -30,6 +30,10 @@ const useStyles = makeStyles({
     backgroundColor: '#00d6ef',
     borderRadius: '5px',
     fontSize: '17px'
+  },
+  resizeImage: {
+    maxWidth: '265px',
+    height: '250px'
   }
 })
 
@@ -55,7 +59,7 @@ return (
         title={name}
         subheader={genre}
       />
-      <CardMedia
+      <CardMedia className={classes.resizeImage}
         component="img"
         height="194"
         image={image}
