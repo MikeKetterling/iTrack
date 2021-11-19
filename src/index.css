@@ -5,9 +5,20 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1 {
+  text-align: center; 
+  font-size: 45px;
+  background-image: url('https://t3.ftcdn.net/jpg/02/99/02/34/360_F_299023448_5X1XWU14OqsC43cU6ddeim20nNwW4CG0.jpg');
+  color: rgb(243, 241, 241);
+  position: top;
+}
+
+

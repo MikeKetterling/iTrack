@@ -11,7 +11,7 @@ function MainContainer ({artistArr, search, setSearch, handleUpdateLike}) {
     return (
         <div>
             <Search search={search} setSearch={setSearch}/>
-            <Grid container >
+            <Grid container style={{display: 'flex'}} >
                 {artistArr.map((artist) =>  (
                         <AlbumCards artist={artist} 
                         key={artist.id} 

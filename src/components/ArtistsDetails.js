@@ -11,7 +11,7 @@ function ArtistsDetails () {
     const artistId = useParams().id;
 
     useEffect(() => {
-        fetch(`http://localhost:3001/artists/${artistId}`)
+        fetch(`http://localhost:3000/artists/${artistId}`)
         .then(response => response.json())
         .then(data => {setArtist(data) 
             setIsLoaded(true)})

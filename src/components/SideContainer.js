@@ -32,7 +32,6 @@ function SideContainer ({artists}) {
     </SideDrawer>
   )
 
-
     return (
        <SideButton>
         <Button onClick={toggleDrawer(true)}>LIKED ARTIST</Button>

@@ -14,13 +14,13 @@ function App() {
 
 
   useEffect(() => {
-    fetch('http://localhost:3001/artists')
+    fetch('http://localhost:3000/artists')
     .then(resp => resp.json())
     .then(data => setArtists(data)) 
   }, []);
-
+  console.log(artists)
   const handleUpdateLike = (artistObj) => {
-    fetch(`http://localhost:3001/artists/${artistObj.id}`, {
+    fetch(`http://localhost:3000/artists/${artistObj.id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type':'application/json'

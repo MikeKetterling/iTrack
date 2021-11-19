@@ -4,10 +4,11 @@ import styled from 'styled-components'
 
 function Header () {
     return (
-      <div>
-          <h1>iTracks</h1>
+      <div className='header'>
+          <h1>-iTracks-</h1>
           <nav>
             <Link to={"/artists/new"}>Add your Next Artist </Link>
+            <br/>
             <Link to={"/"}> HOME</Link>
           </nav>
       </div>
@@ -16,5 +17,4 @@ function Header () {
 
 export default Header;
 
-const H1 = styled.h1`
-  text-align: center;
+
