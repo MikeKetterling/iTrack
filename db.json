@@ -16,7 +16,7 @@
       "bio": "Caleb Zackery “Don” Toliver, is a rapper, singer, and songwriter from Houston, Texas. ... The singles quickly caught the ear of Atlantic Records, which signed Toliver to the label in March 2018. Under Atlantic, he released his major-label debut album, Donny Womack.",
       "image": "https://uproxx.com/wp-content/uploads/2020/08/don-toliver-grid.jpg?w=710",
       "liked": false,
-      "youtube": "https://www.youtube.com/watch?v=gB_1xE23gb4"
+      "youtube": "https://www.youtube.com/embed/qFIJHaylMu4"
     },
     {
       "id": 3,
@@ -25,7 +25,7 @@
       "bio": "NOTD (pronounced noted) is a Swedish musical production duo composed of Tobias Danielsson and Samuel Brandt. They are best known for their songs 'I Wanna Know' featuring Bea Miller and 'So Close'. The duo met on SoundCloud and began creating remixes together before they found out they would be attending the same high school. The duo chose the name NOTD by combining the last two letters of each of their last names and reversing them.",
       "image": "https://pbs.twimg.com/media/DgaNhpIU0AADKrg.jpg",
       "liked": false,
-      "youtube": "https://www.youtube.com/watch?v=7DrmCh9lMls"
+      "youtube": "https://www.youtube.com/embed/dP-zZnptsI8"
     },
     {
       "id": 4,
@@ -43,7 +43,7 @@
       "bio": "William Sami Étienne Grigahcine, also known by his stage name DJ Snake, is a French record producer and DJ. He first achieved international attention in 2013 by releasing an instrumentation-orientated single 'Turn Down for What'. He made his international debut with the singles 'Bird Machine' and 'Turn Down for What' in 2013. ",
       "image": "https://raverrafting.com/wp-content/uploads/2014/01/DJ-Snake-Main-Image.jpg",
       "liked": false,
-      "youtube": "https://www.youtube.com/watch?v=tJXPfNDVF4I"
+      "youtube": "https://www.youtube.com/embed/tJXPfNDVF4I"
     },
     {
       "id": 6,
@@ -52,7 +52,7 @@
       "bio": "Kendrick Lamar Duckworth is an American rapper, songwriter and record producer. Since his mainstream debut in 2012 with Good Kid, M.A.A.D City, Lamar has been regarded as one of the most influential rappers of his generation.",
       "image": "https://www.gannett-cdn.com/-mm-/db06aca357e6f47b57f0b2de899e89f449db04b4/c=0-196-3000-1891/local/-/media/2017/04/30/FSUNews/FSUNews/636291511281687361-GettyImages-672576760.jpg?width=660&height=373&fit=crop&format=pjpg&auto=webp",
       "liked": false,
-      "youtube": "https://www.youtube.com/watch?v=B5YNiCfWC3A"
+      "youtube": "https://www.youtube.com/embed/v6HBZC9pZHQ"
     },
     {
       "id": 7,
@@ -61,7 +61,7 @@
       "bio": "Khalid Donnel Robinson is an American singer signed to Right Hand Music Group and RCA Records. He rose to fame after the release of his debut studio album, American Teen, and the album spawned the US top-20 singles 'Location' and 'Young Dumb & Broke', and was later certified double platinum.",
       "image": "https://wwwimage-tve.cbsstatic.com/base/files/blog/ef0c560eaddf10da_header.jpg",
       "liked": false,
-      "youtube": "https://www.youtube.com/watch?v=x3bfa3DZ8JM"
+      "youtube": "https://www.youtube.com/embed/x3bfa3DZ8JM"
     },
     {
       "id": 8,
@@ -70,16 +70,16 @@
       "bio": "Tame Impala is the psychedelic music project of Australian multi-instrumentalist Kevin Parker. As a touring act, Tame Impala consists of Parker, Dominic Simper, Jay Watson, Cam Avery, and Julien Barbagallo, but Parker plays with a band when touring, he writes, records, produces and engineers his albums alone.",
       "image": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/tame-impala-esquire-header-1580902661.jpg?crop=1.00xw:0.322xh;0,0.678xh&resize=640:*",
       "liked": false,
-      "youtube": "https://www.youtube.com/watch?v=UTwlmgV3pEI"
+      "youtube": "https://www.youtube.com/embed/TqJLyOgF2AM"
     },
     {
       "id": 9,
       "name": "Michael Jackson",
       "genre": "Funk/Soul/Dance/Disco",
       "bio": "Michael Joseph Jackson ONM was an American singer, songwriter and dancer. Dubbed the 'King of Pop', and over a four-decade career, his contributions to music, dance and fashion, along with his publicized personal life, made him a global figure in popular culture.",
-      "image": "https://yt3.ggpht.com/ytc/AKedOLQGc--j6lvHqsv3tHEMLeMjseCnsLuCRAeLliISCXw=s88-c-k-c0x00ffffff-no-rj",
+      "image": "https://i1.sndcdn.com/artworks-000169672613-mecyps-t500x500.jpg",
       "liked": false,
-      "youtube": "https://www.youtube.com/watch?v=oRdxUFDoQe0"
+      "youtube": "https://www.youtube.com/embed/1-7ABIM2qjU"
     },
     {
       "id": 10,
@@ -88,7 +88,7 @@
       "bio": "Swedish Artist Ehrling emerged in Stockholm in 2016. He started out with sharing his talent by creating copyright-free music, and as the demand of his music grew, it was only obvious to raise the standards and aim at reaching new heights as a DJ/Composer. Having 10 years of experience creating music, Ehrling is at the best possible position to co-lead the genre of happy vibes.",
       "image": "https://dynamicmedia.livenationinternational.com/Media/f/m/x/49cd5a39-c7ec-4688-9c1e-ce8e4a701efc.jpg",
       "liked": false,
-      "youtube": "https://www.youtube.com/watch?v=a5ImNzexO4E"
+      "youtube": "https://www.youtube.com/embed/uoEhoGt4mIw"
     },
     {
       "name": "Apple",
@@ -105,6 +105,14 @@
       "image": "",
       "youtube": "",
       "id": 12
+    },
+    {
+      "name": "its lit",
+      "genre": "trap",
+      "bio": "",
+      "image": "",
+      "youtube": "",
+      "id": 13
     }
   ]
 }

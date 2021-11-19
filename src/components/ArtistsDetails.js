@@ -41,7 +41,7 @@ function ArtistsDetails () {
             <h1>{name}</h1>
             <h3>{genre}</h3>
             <p>{bio}</p>
-            <iframe src={youtube}title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+            <iframe width='800' height='475' src={youtube}title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </div>
     );
 
