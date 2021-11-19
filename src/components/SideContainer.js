@@ -70,7 +70,6 @@ function SideContainer ({artists}) {
 
     
 
-
     return (
       <div className={classes.root}>
         <Drawer

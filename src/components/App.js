@@ -38,7 +38,7 @@ function App() {
     .then(resp => resp.json())
     .then(data => setArtists(data)) 
   }, []);
-
+  console.log(artists)
   const handleUpdateLike = (artistObj) => {
     fetch(`http://localhost:3000/artists/${artistObj.id}`, {
       method: 'PATCH',
