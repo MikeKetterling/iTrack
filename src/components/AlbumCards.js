@@ -9,7 +9,7 @@ import Box from '@mui/material/Box'
 
 function AlbumCards ({artist, handleUpdateLike}) {
 
-    const {id, name, image, liked, genre} = artist
+    const {id, name, image='https://yt3.ggpht.com/_smzOKLqd88y-OC3Ubuc6Iz8fzp762tAggc36LNq4maine4bE75731tvRVbKZFNGrXuyeR5UMw=s88-c-k-c0x00ffffff-no-rj', liked, genre} = artist
 
 return (
     <Box sx={{ flexGrow: 1, width: '200px' }}>

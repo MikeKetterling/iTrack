@@ -7,7 +7,7 @@ function ArtistsDetails () {
 
     const [artist, setArtist] = useState([]);
     const [isLoaded, setIsLoaded] = useState(false);
-    const {name, genre, youtube, image, bio} = artist
+    const {name, genre, youtube='https://www.youtube.com/watch?v=dQw4w9WgXcQ', image, bio} = artist
     const artistId = useParams().id;
 
     useEffect(() => {
