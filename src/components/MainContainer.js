@@ -4,18 +4,19 @@ import Grid from '@mui/material/Grid'
 
 
 
-function MainContainer ({artistArr, search, setSearch, handleUpdateLike}) {
+function MainContainer ({artistArr, handleUpdateLike, handleDeleteArtist}) {
 
     
 
     return (
         <div>
-            <Search search={search} setSearch={setSearch}/>
+            {/* <Search search={search} setSearch={setSearch}/> */}
             <Grid container >
                 {artistArr.map((artist) =>  (
                         <AlbumCards artist={artist} 
                         key={artist.id} 
-                        handleUpdateLike={handleUpdateLike} />
+                        handleUpdateLike={handleUpdateLike}
+                        handleDeleteArtist={handleDeleteArtist} />
                     )
                 )}
              </Grid>

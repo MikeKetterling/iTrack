@@ -6,21 +6,41 @@ import Form  from './Form'
 import { Route, Switch } from 'react-router';
 import ArtistsDetails from './ArtistsDetails';
 import Header from './Header';
+import { createTheme, ThemeProvider } from '@material-ui/core/styles'
+
+const theme = createTheme({
+  palette: {
+    type: 'dark',
+    primary: {
+      main: '#00d6ef'
+    },
+    background: {
+      default: '#efd3d3',
+      paper: '#000000'
+    },
+    secondary: {
+      main: '#00d6ef'
+    }
+  }
+})
+
 
 function App() {
 
   const [artists, setArtists] = useState([]);
   const [search, setSearch] = useState('');
 
+  
+
 
   useEffect(() => {
-    fetch('http://localhost:3001/artists')
+    fetch('http://localhost:3000/artists')
     .then(resp => resp.json())
     .then(data => setArtists(data)) 
   }, []);
 
   const handleUpdateLike = (artistObj) => {
-    fetch(`http://localhost:3001/artists/${artistObj.id}`, {
+    fetch(`http://localhost:3000/artists/${artistObj.id}`, {
       method: 'PATCH',
       headers: {
         'Content-Type':'application/json'
@@ -51,13 +71,22 @@ function App() {
     return artistObj.name.toLowerCase().includes(search.toLowerCase())
   })
 
+  //delete button
+  const handleDeleteArtist = (id) => {
+    const updatedArtistArray = artists.filter((artist) => artist.id !== id);
+    setArtists(updatedArtistArray)
+  }
+
   return (
-    <div className="App">
-      <Header />
+    
+    <ThemeProvider theme={theme}>
+      <Header search={search} 
+          setSearch={setSearch} />
+      <SideContainer artists={artists} />
       <Switch>
 
         <Route exact path="/artists/new">
-          <Form  handleNewArtists={handleNewArtists}/>
+          <Form handleNewArtists={handleNewArtists}/>
         </Route>
 
         <Route exact path="/artists/:id">
@@ -67,10 +96,11 @@ function App() {
         <Route path="/">
           <MainContainer 
           artistArr={displayCurrent} 
-          search={search} 
-          setSearch={setSearch} 
-          handleUpdateLike={handleUpdateLike} />
-          <SideContainer artists={artists} />
+          // search={search} 
+          // setSearch={setSearch} 
+          handleUpdateLike={handleUpdateLike}
+          handleDeleteArtist={handleDeleteArtist} />
+          
         </Route>
 
         <Route>
@@ -78,7 +108,8 @@ function App() {
         </Route>
 
       </Switch>
-    </div>
+      
+    </ThemeProvider>
   );
 }
 

@@ -1,8 +1,29 @@
 import { useState } from 'react';
 import { useHistory } from "react-router-dom";
+import { makeStyles } from '@material-ui/core';
+
+const drawerWidth = 200
+
+const useStyles = makeStyles({
+  formData: {
+    width: `calc(100% - ${drawerWidth}px)`,
+    padding: '200px',
+    textAlign: 'center',
+    margin: '5px'
+  },
+  formBox: {
+    padding: '5px',
+    borderRadius: '10px',
+    margin: '5px'
+  }
+})
+
+  
 
 
 function Form ({handleNewArtists}) {
+
+    const classes = useStyles()
 
     const [formData, setFormData] = useState({
         name: '',
@@ -31,7 +52,7 @@ function Form ({handleNewArtists}) {
             image: formData.image,
             youtube: formData.youtube,
         };
-        fetch('http://localhost:3001/artists', {
+        fetch('http://localhost:3000/artists', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -49,49 +70,53 @@ function Form ({handleNewArtists}) {
 
     return (
         <>
-            <form onSubmit={handleSubmit} className='form'>
-                <button type='submit'>Submit</button>
-                <label>NAME</label>
-                <input 
+            <form className={classes.formData} onSubmit={handleSubmit}>
+                <label>NAME:</label>
+                <input
+                className={classes.formBox} 
                 type='text'
                 value={formData.name}
                 placeholder='Name'
                 name='name'
                 onChange={handleChange}
                 />
-                <label>GENRE</label>
-                <input 
+                <label>GENRE:</label>
+                <input
+                className={classes.formBox} 
                 type='text'
                 value={formData.genre}
                 placeholder='Genre'
                 name='genre'
                 onChange={handleChange}
                 />
-                <label>BIO</label>
-                <input 
+                <label>BIO:</label>
+                <input
+                className={classes.formBox} 
                 type='text'
                 value={formData.bio}
                 placeholder='Bio'
                 name='bio'
                 onChange={handleChange}
                 />
-                <label>IMAGE LINK</label>
-                <input 
+                <label>IMAGE LINK:</label>
+                <input
+                className={classes.formBox} 
                 type='text'
                 value={formData.image}
                 placeholder='Image'
                 name='image'
                 onChange={handleChange}
                 />
-                <label>MUSIC VIDEO</label>
-                <input 
+                <label>YouTube Link:</label>
+                <input
+                className={classes.formBox}
                 type='text'
                 value={formData.youtube}
                 placeholder='Youtube'
                 name='youtube'
                 onChange={handleChange}
                 />
-
+                <button type='submit'>Submit</button>
                 
             </form>
         </>

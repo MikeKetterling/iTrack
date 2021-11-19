@@ -1,20 +1,43 @@
-import { Link } from 'react-router-dom'
-import styled from 'styled-components'
+
+import { makeStyles } from '@material-ui/core';
+import Search from './Search'
+
+import AppBar from '@material-ui/core/AppBar'
+import ToolBar from '@material-ui/core/ToolBar'
+import Typography from '@material-ui/core/Typography';
+
+const drawerWidth = 200
+
+const useStyles = makeStyles({
+  appbar: {
+    width: `calc(100% - ${drawerWidth}px)`,
+  }
+})
 
 
-function Header () {
+
+
+function Header ({search, setSearch}) {
+
+  const classes = useStyles()
+
     return (
       <div>
-          <h1>iTracks</h1>
-          <nav>
-            <Link to={"/artists/new"}>Add your Next Artist </Link>
-            <Link to={"/"}> HOME</Link>
-          </nav>
+        <AppBar
+          className={classes.appbar}
+        >
+          <ToolBar>
+          <Search
+          search={search} setSearch={setSearch}/>
+
+          </ToolBar>
+        </AppBar>
+          
       </div>
     );
 }
 
 export default Header;
 
-const H1 = styled.h1`
-  text-align: center;
+
+

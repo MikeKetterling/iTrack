@@ -1,8 +1,24 @@
+import { makeStyles } from '@material-ui/core';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
 
+const drawerWidth = 200
+
+const useStyles = makeStyles({
+  bioData: {
+    width: `calc(100% - ${drawerWidth}px)`,
+    paddingTop: '100px',
+    paddingLeft: '200px',
+    textAlign: 'center'
+  }
+})
+
+
 function ArtistsDetails () {
+
+    const classes = useStyles()
+
 
 
     const [artist, setArtist] = useState([]);
@@ -11,7 +27,7 @@ function ArtistsDetails () {
     const artistId = useParams().id;
 
     useEffect(() => {
-        fetch(`http://localhost:3001/artists/${artistId}`)
+        fetch(`http://localhost:3000/artists/${artistId}`)
         .then(response => response.json())
         .then(data => {setArtist(data) 
             setIsLoaded(true)})
@@ -20,7 +36,7 @@ function ArtistsDetails () {
     if(!isLoaded) return <div>Loading...</div> 
 
     return(
-        <div>
+        <div className={classes.bioData}>
             <img src={image} alt={name}/>
             <h1>{name}</h1>
             <h3>{genre}</h3>

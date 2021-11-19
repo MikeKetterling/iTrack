@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 function FavoriteList ({name, id}) {
 
@@ -6,7 +6,7 @@ function FavoriteList ({name, id}) {
     
     return (
         <div>
-            <Link to={`/artists/${id}`}>{name}</Link>
+            <NavLink to={`/artists/${id}`}>{name}</NavLink>
         </div>
     );
 }

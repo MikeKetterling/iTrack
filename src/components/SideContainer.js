@@ -1,12 +1,39 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 import FavoriteList from './FavoriteList'
 
 import Drawer from '@material-ui/core/Drawer';
-import Button from '@material-ui/core/Button';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/List';
-import styled from 'styled-components'
+import Typography from '@material-ui/core/Typography';
+import { makeStyles } from '@material-ui/core';
+import List from '@material-ui/core/List'
+import ListItem from '@material-ui/core/ListItem'
+import ListItemIcon from '@material-ui/core/ListItemIcon'
+import ListItemText from '@material-ui/core/ListItemText'
+import { AddCircle, Favorite, Home} from '@material-ui/icons';
+import { useHistory, useLocation } from 'react-router';
 
+const drawerWidth = 200
+
+
+const useStyles = makeStyles({
+  page: {
+    background: '#f9f9f9',
+    width: '100%'
+  },
+  drawer: {
+    width: drawerWidth
+  },
+  drawerPaper: {
+    width: drawerWidth
+  },
+  typographyOne: {
+    textAlign: 'center',
+    fontFamily: 'Kaushan Script'
+  },
+  typographyTwo: {
+    textAlign: 'center',
+    fontFamily: 'Bebas Neue'
+  }
+})
 
 
 function SideContainer ({artists}) {
@@ -16,46 +43,71 @@ function SideContainer ({artists}) {
     const filteredArtists = artists.filter(artist => (liked ? !artist.liked: artist.liked))
     const displayCurrentFavorite = filteredArtists.map((artistObj) => (<FavoriteList key={artistObj.id} id={artistObj.id} name={artistObj.name} liked={artistObj.liked}/>))
     
-    const [state, setState] = useState(false)
-    const toggleDrawer = (open) => (e) => {
-    setState(open)
-  }
+    const classes = useStyles()
+    const history = useHistory()
+    const location = useLocation()
 
-    const list = () => (
-    <SideDrawer>
-    <List>
-      <ListItem>
-        {displayCurrentFavorite}
-        This is where the favorited artists will go.
-      </ListItem>
-    </List>
-    </SideDrawer>
-  )
+
+
+    const menuItems = [
+      {
+        text: 'Home',
+        icon: <Home color='secondary' />,
+        path: '/'
+      },
+      {
+        text: 'Add New Artist',
+        icon: <AddCircle color='secondary' />,
+        path: '/artists/new'
+      },
+      
+      {
+        text: 'My Fav Artist',
+        icon: <Favorite color='secondary' />,
+        path: '/'
+      },
+    ]
+
+    
 
 
     return (
-       <SideButton>
-        <Button onClick={toggleDrawer(true)}>LIKED ARTIST</Button>
+      <div className={classes.root}>
         <Drawer
-        anchor={'left'}
-        open={state}
-        onClose={toggleDrawer(false)}
-      >
-        {list()}
-      </Drawer>
-      </SideButton>
+          className={classes.drawer}
+          variant='permanent'
+          anchor='left'
+          classes={{ paper: classes.drawerPaper }}
+        >
+          <div>
+            <Typography variant='h3' className={classes.typographyOne}>
+            iTracks
+            </Typography>
+          </div>
+        {/* list links */}
+        <List>
+          {menuItems.map(item => (
+            <ListItem
+            button
+            key={item.text}
+            onClick={() => history.push(item.path)}
+            className={location.pathname == item.path ? classes.active : null}
+            >
+                <ListItemIcon>{item.icon}</ListItemIcon>
+                <ListItemText primary={item.text}/>
+              </ListItem>
+          ))}
+        </List>
+        <Typography variant='h5' className={classes.typographyTwo}>
+        {displayCurrentFavorite}
+            </Typography>
+
+        </Drawer>
+        
+      </div>
     );
 }
 
 export default SideContainer;
 
 
-const SideDrawer = styled.div`
-    background-color: aqua;
-    height: 100%;
-`
-const SideButton = styled.button`
-    position: absolute;
-    top: 0;
-
-`;
